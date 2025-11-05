@@ -9,12 +9,12 @@ connectDB();
 
 // Iniciar servidor
 app.listen(PORT, () => {
-  console.log(`🚀 Servidor corriendo en puerto ${PORT}`);
-  console.log(`📝 Entorno: ${process.env.NODE_ENV}`);
+  console.log(`Servidor corriendo en puerto ${PORT}`);
+  console.log(`Entorno: ${process.env.NODE_ENV}`);
 });
 
 // Manejo de errores no capturados
 process.on('unhandledRejection', (err) => {
-  console.error('❌ Error no manejado:', err);
+  console.error('Error no manejado:', err);
   process.exit(1);
 });
